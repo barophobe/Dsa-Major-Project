@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "utf-8">
+	<title>International Students</title>
+	
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<!--<meta content="width=device-width, initial-scale=1" name="viewport">-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<link href="assets/img/favicon.ico" rel="icon"><!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<script src="js/jquery.js" type="text/javascript"></script>
+  <link rel="canonical" href="https://dev.twitter.com/web/tweet-button">
+  
+  
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/unipupil.css" rel="stylesheet" type="text/css">
+  <link href="css/media.css" rel="stylesheet">
+  <script src="js/Unijs.js" type="text/javascript"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer>{lang: 'en-GB'}</script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54396234-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1729585233932195";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+
+<header class="scheme">
+   <nav class="navbar navbar-default top topNav">
+      <div class="container-fluid blkBg">
+   
+    <!-- Brand and toggle get grouped for better mobile display -->
+       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+        <a class="navbar-brand" href="/en"><img src="assets/img/Unipupil-logo-72px.png" id="log" alt="logo"><span class="logTxt">&nbsp;&nbsp;&nbsp;&nbsp;EDUCATION FOR LIFE</span></a>
+          
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+        <ul class="nav navbar-nav navbar-right" id="logList">
+              <li ><a href="#about" >About Us</a></li>
+              <li><a href="/en/blogs" >Blog</a></li>
+              <li><a href="/en/contact" >Contact Us</a></li>
+              <li>
+                <ul class="socLicon">
+                  <li><a href="http://www.facebook.com/Unipupil"><img src="assets/img/fb-icon.png" alt="social icon"></a></li>
+                  <li><a href="https://plus.google.com/u/0/110645706065869339415/posts"><img src="assets/img/gplus-icon.png" alt="social icon"></a></li>
+                  <li><a href="http://twitter.com/Unipupil"><img src="assets/img/twitter-icon.png" alt="social icon"></a></li>
+                  <li><a href="http://www.linkedin.com/company/2646270"><img src="assets/img/linkedin-icon.png" alt="social icon"></a></li>
+                </ul>
+              </li>
+              <li><a href="https://unipupil.com/cart" ><img src="assets/img/shopping-cart-icon-23px.png" alt="s-cart"/></a></li>
+              
+              <li class="logged" >
+                  <div class="btn-group btn-group-xs vrtLog" role="group" aria-label="...">
+                      <a href="/en/content/sign-unipupil" class="btn btn-default" id="grnBtnl">Sign Up</a>
+    
+                      <a class="btn btn-default" id="grnBtnr">Log in</a>
+                  </div>
+              </li>
+
+
+
+ <!-- languages dropdown placeholder, to be replaced by google translate as on main pages -->
+
+
+   <li class="dropdown open megamenu">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown">&nbsp;Language&nbsp;/&nbsp;<p id="lang" class="paraNav">EN</p> <span class="caret"></span></a>
+            <div class="dropdown-menu drpStyle1">
+              <ul class="list-unstyled col-sm-2" role="menu"> 
+                <li><a href="#">Select Language</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Afrikaans</a></li>
+                <li><a href="#">Albanian</a></li>
+                <li><a href="#">Arabic</a></li>
+                <li><a href="#">Armenian</a></li>
+                <li><a href="#">Azerbaijani</a></li>
+                <li><a href="#">Basque</a></li>
+                <li><a href="#">Belarusian</a></li>
+                <li><a href="#">Bengali</a></li>
+                <li><a href="#">Bosnian</a></li>
+                <li><a href="#">Bulgarian</a></li>
+                <li><a href="#">Catalan</a></li>
+                <li><a href="#">Cebuano</a></li>
+                <li><a href="#">Chichewa</a></li>
+                <li><a href="#">Chinese (Simplified)</a></li>
+                <li><a href="#">Chinese (Traditional)</a></li>
+              </ul>
+              <ul class=" col-sm-2 list-unstyled" role="menu">           
+                <li><a href="#">Croatian</a></li>
+                <li><a href="#">Czech</a></li>
+                <li><a href="#">Danish</a></li>
+                <li><a href="#">Dutch</a></li>
+                <li><a href="#">Esperanto</a></li>
+                <li><a href="#">Estonian</a></li>
+                <li><a href="#">Filipino</a></li>
+                <li><a href="#">Finnish</a></li>
+                <li><a href="#">French</a></li>
+                <li><a href="#">Galician</a></li>
+                <li><a href="#">Georgian</a></li>
+                <li><a href="#">German</a></li>
+                <li><a href="#">Greek</a></li>
+                <li><a href="#">Gujarati</a></li>
+                <li><a href="#">Haitian Creole</a></li>
+                <li><a href="#">Hausa</a></li>                             
+              </ul>
+              <ul class="list-unstyled  col-sm-2" role="menu">                
+                <li><a href="#">Hebrew</a></li>
+                <li><a href="#">Hindi</a></li>
+                <li><a href="#">Hmong</a></li>
+                <li><a href="#">Hungarian</a></li>
+                <li><a href="#">Icelandic</a></li>
+                <li><a href="#">Igbo</a></li>
+                <li><a href="#">Indonesian</a></li>
+                <li><a href="#">Irish</a></li>
+                <li><a href="#">Italian</a></li>
+                <li><a href="#">Japanese</a></li>
+                <li><a href="#">Javanese</a></li>
+                <li><a href="#">Kannada</a></li>
+                <li><a href="#">Kazakh</a></li>
+                <li><a href="#">Khmer</a></li>
+                <li><a href="#">Korean</a></li>
+                <li><a href="#">Lao</a></li>
+                <li><a href="#">Latin</a></li>
+              </ul>
+              <ul class="list-unstyled  col-sm-2" role="menu">               
+                <li><a href="#">Latvian</a></li>
+                <li><a href="#">Lithuanian</a></li>
+                <li><a href="#">Macedonian</a></li>
+                <li><a href="#">Malagasy</a></li>
+                <li><a href="#">Malay</a></li>
+                <li><a href="#">Malayalam</a></li>
+                <li><a href="#">Maltese</a></li>
+                <li><a href="#">Maori</a></li>
+                <li><a href="#">Marathi</a></li>
+                <li><a href="#">Mongolian</a></li>
+                <li><a href="#">Myanmar (Burmese)</a></li>
+                <li><a href="#">Malayalam</a></li>
+                <li><a href="#">Maltese</a></li>
+                <li><a href="#">Maori</a></li>
+                <li><a href="#">Marathi</a></li>
+                <li><a href="#">Mongolian</a></li>
+                <li><a href="#">Myanmar (Burmese)</a></li>
+              </ul>
+              <ul class="list-unstyled  col-sm-2" role="menu">                
+                <li><a href="#">Nepali</a></li>
+                <li><a href="#">Norwegian</a></li>
+                <li><a href="#">Persian</a></li>
+                <li><a href="#">Polish</a></li>
+                <li><a href="#">Portuguese</a></li>
+                <li><a href="#">Punjabi</a></li>
+                <li><a href="#">Romanian</a></li>
+                <li><a href="#">Russian</a></li>
+                <li><a href="#">Serbian</a></li>
+                <li><a href="#">Sesotho</a></li>
+                <li><a href="#">Sinhala</a></li>
+                <li><a href="#">Slovak</a></li>
+                <li><a href="#">Slovenian</a></li>
+                <li><a href="#">Somali</a></li>
+                <li><a href="#">Spanish</a></li>
+                <li><a href="#">Sundanese</a></li>
+                <li><a href="#">Swahili</a></li>
+              </ul>
+              <ul class="list-unstyled  col-sm-2" role="menu">                 
+                <li><a href="#">Swedish</a></li>
+                <li><a href="#">Tajik</a></li>
+                <li><a href="#">Tamil</a></li>
+                <li><a href="#">Telugu</a></li>
+                <li><a href="#">Thai</a></li>
+                <li><a href="#">Turkish</a></li>
+                <li><a href="#">Ukrainian</a></li>
+                <li><a href="#">Urdu</a></li>
+                <li><a href="#">Uzbek</a></li>
+                <li><a href="#">Vietnamese</a></li> 
+                <li><a href="#">Welsh</a></li>
+                <li><a href="#">Yiddish</a></li>
+                <li><a href="#">Yoruba</a></li>
+                <li><a href="#">Zulu</a></li> 
+              </ul>
+            </div>
+           </li>
+         </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+	 
+
+
+
+  <nav class="navbar-default imgTop">
+  <div class="container-fluid frmDiv">
+   
+   
+
+    <!-- navbar search form -->
+    
+      <form class="form-inline" id="frmPlc">
+
+        
+        <div class="btn-group frmPad">
+              <button type="button" class="btn btn-default dropdown-toggle bTnDrp"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Action <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu jqSel">
+                <li><a href="#">Area Of Study</a></li>
+                <li><a href="#">Institution Name</a></li>
+                <li><a href="#">Course Name</a></li>
+                <li><a href="#">City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+              </ul>
+        </div>
+        <div class="form-group frmPad">
+              <input type="text" class="form-control bTnDrp" placeholder="Search">
+        </div>
+        
+        <button type="submit" class="btn btn-default btnMore"><img id="srch" src="assets/img/search-icon-white.png" alt="mag glass icon"/></button>
+      
+      </form>
+  
+  </div>
+  </nav>  
+   
+
+
+
+</header>
+<!--red nav with link to regional search and countries with courses/educational institutions-->
+<nav id ="myNav">  
+<div class="container-fluid" id="redNav">
+   <div>
+      <ul class=" navbar-nav listcntr hov">
+        <li>
+          <a href="/en/continent"><img id="dshBrd" src="assets/img/dashboard-icon-20px.png" alt="globe icon" /><strong>Regional Search</strong></a></li>
+        <li class="dropdown smlDispl">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Africa&nbsp;</strong> <span class="caret icnCol"></span></a>
+          <ul class="dropdown-menu multi-level drpStyle ">
+            <li><a href="#">Universities</a></li>
+            <li><a href="#">Colleges</a></li>
+            <li><a href="#">High Schools</a></li>
+            <li><a href="#">Seconday Schools</a></li>
+            <li><a href="#">Primary Schools</a></li>
+            <li><a href="#">Early Childhood</a></li>
+            <li class="dropdown dropdown-submenu">
+                <a class="dropdown-toggle" data-toggle=
+                "dropdown" href="#">Other Courses</a>
+                <ul class="dropdown-menu  drpStyle">
+                    <li><a href="#">Acting + Drama</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Career Prep.</a></li>
+                    <li><a href="#">Dancing</a></li>
+                    <li><a href="#">Digital Marketing + Internet</a></li>                                           
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Flying</a></li>
+                    <li><a href="#">Culinary</a></li>
+                    <li><a href="#">Horticulture</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Languages</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Office Skills</a></li>
+                    <li><a href="#">Driving</a></li>
+                    <li><a href="#">Fashion + Design</a></li>
+                    <li><a href="#">Fitness</a></li>                                       
+                </ul>
+            </li>
+        </ul>
+    </li>
+        <li class="dropdown smlDispl">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Asia&nbsp;</strong><span class="caret icnCol"></span></a>
+          <ul class="dropdown-menu multi-level drpStyle ">
+            <li><a href="#">Universities</a></li>
+            <li><a href="#">Colleges</a></li>
+            <li><a href="#">High Schools</a></li>
+            <li><a href="#">Seconday Schools</a></li>
+            <li><a href="#">Primary Schools</a></li>
+            <li><a href="#">Early Childhood</a></li>
+            <li class="dropdown dropdown-submenu">
+                <a class="dropdown-toggle" data-toggle=
+                "dropdown" href="#">Other Courses</a>
+                <ul class="dropdown-menu  drpStyle">
+                    <li><a href="#">Acting + Drama</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Career Prep.</a></li>
+                    <li><a href="#">Dancing</a></li>
+                    <li><a href="#">Digital Marketing + Internet</a></li>                                           
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Flying</a></li>
+                    <li><a href="#">Culinary</a></li>
+                    <li><a href="#">Horticulture</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Languages</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Office Skills</a></li>
+                    <li><a href="#">Driving</a></li>
+                    <li><a href="#">Fashion + Design</a></li>
+                    <li><a href="#">Fitness</a></li>                                       
+                </ul>
+            </li>
+        </ul>
+    </li>
+        
+        
+        <li class="dropdown smlDispl">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Europe&nbsp;</strong><span class="caret icnCol"></span></a>
+          <ul class="dropdown-menu multi-level drpStyle ">
+            <li><a href="#">Universities</a></li>
+            <li><a href="#">Colleges</a></li>
+            <li><a href="#">High Schools</a></li>
+            <li><a href="#">Seconday Schools</a></li>
+            <li><a href="#">Primary Schools</a></li>
+            <li><a href="#">Early Childhood</a></li>
+            <li class="dropdown dropdown-submenu">
+                <a class="dropdown-toggle" data-toggle=
+                "dropdown" href="#">Other Courses</a>
+                <ul class="dropdown-menu  drpStyle">
+                    <li><a href="#">Acting + Drama</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Career Prep.</a></li>
+                    <li><a href="#">Dancing</a></li>
+                    <li><a href="#">Digital Marketing + Internet</a></li>                                           
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Flying</a></li>
+                    <li><a href="#">Culinary</a></li>
+                    <li><a href="#">Horticulture</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Languages</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Office Skills</a></li>
+                    <li><a href="#">Driving</a></li>
+                    <li><a href="#">Fashion + Design</a></li>
+                    <li><a href="#">Fitness</a></li>                                       
+                </ul>
+            </li>
+        </ul>
+    </li>
+        <li class="dropdown smlDispl">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>North America&nbsp;</strong><span class="caret icnCol"></span></a>
+          <ul class="dropdown-menu multi-level drpStyle ">
+            <li><a href="#">Universities</a></li>
+            <li><a href="#">Colleges</a></li>
+            <li><a href="#">High Schools</a></li>
+            <li><a href="#">Seconday Schools</a></li>
+            <li><a href="#">Primary Schools</a></li>
+            <li><a href="#">Early Childhood</a></li>
+            <li class="dropdown dropdown-submenu">
+                <a class="dropdown-toggle" data-toggle=
+                "dropdown" href="#">Other Courses</a>
+                <ul class="dropdown-menu  drpStyle">
+                    <li><a href="#">Acting + Drama</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Career Prep.</a></li>
+                    <li><a href="#">Dancing</a></li>
+                    <li><a href="#">Digital Marketing + Internet</a></li>                                           
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Flying</a></li>
+                    <li><a href="#">Culinary</a></li>
+                    <li><a href="#">Horticulture</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Languages</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Office Skills</a></li>
+                    <li><a href="#">Driving</a></li>
+                    <li><a href="#">Fashion + Design</a></li>
+                    <li><a href="#">Fitness</a></li>                                       
+                </ul>
+            </li>
+        </ul>
+    </li>
+        <li class="dropdown smlDispl">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>South America&nbsp;</strong><span class="caret icnCol"></span></a>
+          <ul class="dropdown-menu multi-level drpStyle ">
+            <li><a href="#">Universities</a></li>
+            <li><a href="#">Colleges</a></li>
+            <li><a href="#">High Schools</a></li>
+            <li><a href="#">Seconday Schools</a></li>
+            <li><a href="#">Primary Schools</a></li>
+            <li><a href="#">Early Childhood</a></li>
+            <li class="dropdown dropdown-submenu">
+                <a class="dropdown-toggle" data-toggle=
+                "dropdown" href="#">Other Courses</a>
+                <ul class="dropdown-menu  drpStyle">
+                    <li><a href="#">Acting + Drama</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Career Prep.</a></li>
+                    <li><a href="#">Dancing</a></li>
+                    <li><a href="#">Digital Marketing + Internet</a></li>                                           
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Flying</a></li>
+                    <li><a href="#">Culinary</a></li>
+                    <li><a href="#">Horticulture</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Languages</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Office Skills</a></li>
+                    <li><a href="#">Driving</a></li>
+                    <li><a href="#">Fashion + Design</a></li>
+                    <li><a href="#">Fitness</a></li>                                       
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+         <li class="dropdown smlDispl">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Oceania&nbsp;</strong><span class="caret icnCol"></span></a>
+          <ul class="dropdown-menu multi-level drpStyle ">
+            <li><a href="#">Universities</a></li>
+            <li><a href="#">Colleges</a></li>
+            <li><a href="#">High Schools</a></li>
+            <li><a href="#">Seconday Schools</a></li>
+            <li><a href="#">Primary Schools</a></li>
+            <li><a href="#">Early Childhood</a></li>
+            <li class="dropdown dropdown-submenu">
+                <a class="dropdown-toggle" data-toggle=
+                "dropdown" href="#">Other Courses</a>
+                <ul class="dropdown-menu  drpStyle">
+                    <li><a href="#">Acting + Drama</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Career Prep.</a></li>
+                    <li><a href="#">Dancing</a></li>
+                    <li><a href="#">Digital Marketing + Internet</a></li>                                           
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Flying</a></li>
+                    <li><a href="#">Culinary</a></li>
+                    <li><a href="#">Horticulture</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Languages</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Office Skills</a></li>
+                    <li><a href="#">Driving</a></li>
+                    <li><a href="#">Fashion + Design</a></li>
+                    <li><a href="#">Fitness</a></li>                                       
+                </ul>
+            </li>
+        </ul>
+    </li>
+       </ul>
+          
+
+      </div>
+    </div>
+    </nav><!-- /.navbar-collapse -->
+
+
+       
+<!-- Hero image below nav bar-->
+
+  <div><img id="imgTop" class="img-responsive" src="assets/img/hero-student-02.jpg" alt="student"/></div>
+
+
+
+
+<!-- Page navigation icons.-->
+
+<div class="container-fluid backDiv plc">
+  <div class="row backDiv  icnPlc">
+     <div class="col-lg-11 col-lg-offset-1 ">
+    <div class="col-sm-12 col-md-12 ">
+    <div class="col-xs-3 col-sm-3 col-md-3">
+      <div class=""><a href="#" class="hovStH"></a>
+      </div>
+       
+    </div>
+
+    <div class="col-xs-3 col-sm-3 col-md-3">
+      <div class=""><a href="Educational_Institutions.html" class="hovEi"></a>
+      </div>
+        
+    </div>
+
+    <div class="col-xs-3 col-sm-3 col-md-3">
+      <div class=""><a href="Agents.html" class="hovAg"></a>
+      </div>
+       
+    </div>
+
+    <div class="col-xs-3 col-sm-3 col-md-3">
+      <div class=""><a href="ServicePro.html" class="hovSp"></a>
+      </div>
+        </div>
+    </div>
+  </div>
+  </div> 
+  </div> 
+
+<!-- Page heading and main content-->
+
+
+
+<!--  main content-->
+<div class="container-fluid backDiv">
+<div class="row">
+
+   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 plcRw plc">
+         <div><h1><span class="headl"><strong>International Students</strong></span></h1><br></div>
+            
+               <div class="lftQuo"><strong>Unipupil is a unique One-Stop global education
+portal, connecting students and education
+institutions around the world.</strong></div><br>
+
+
+               <div><p>With courses from institutions around the world, Unipupil is the place
+to find exactly the right course for you. Whether you’re finishing school soon and
+looking for the right degree, or looking to upskill to help with your career, Unipupil’s
+FREE portal makes taking the next step in your education simple</p></div><br>
+
+<div><img class="glassPosft" src="assets/img/search-icon.png" alt="looking glass"/></div><br><br>
+               
+    <div><p class="txtBlk"><strong>Search for, compare and book courses directly with the institution of
+your choice, using Unipupil’s secure payment method – you can even
+read reviews from current or former students to help you make your
+choice.</strong><p></div><br>
+       
+
+        <div><p>So, start using our free <a href="#"><span class="head2">search function</span></a> today. With Unipupil, the world of
+education is right at your fingertips.</p></div><br>
+<div><img class="imgRib img-responsive" src= "assets/img/ribbon--red-002.png" alt="ribbon"/></div>
+       
+        
+
+
+      </div>
+
+
+      <!-- Green list with featured instituitions-->
+ 
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 plcRw2 plcFeat">
+      
+         <div><h2><span class="head3">Featured</span>&nbsp;&nbsp;<strong>Institutions</strong></h2><br></div>
+         
+    <ul class="instList">
+      
+      <li class="lstBor"><p class="paraLst">Acet / Cork Language Center international&nbsp;&nbsp;&nbsp;<span class="head4">Cork, Ireland</span></p></li>
+      <li class="lstBor"><p class="paraLst">Ainnis Messina<span class="head4">&nbsp;Messina, Italy</span></p></li>
+      <li class="lstBor"><p class="paraLst">Anti C<span class="head4">&nbsp;Villafranca Di Verona</span></p></li>
+      <li class="lstBor"><p class="paraLst">Banfi<span class="head4">&nbsp;Vimercate, Italy</span></p></li>
+      <li class="lstBor"><p class="paraLst">Cesare Arzela<span class="head4">&nbsp;Sarzana, Italy</span></p></li>
+      <li class="lstBor"><p class="paraLst">Charles Darwin<span class="head4">&nbsp;Roma, Italy</span></p></li>
+      
+    </ul> 
+            
+        
+        </div>
+    
+  <!-- App section with image and text-->
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 plcRw2">
+          <div><h2 class=""><span class="head3">Review</span>&nbsp;&nbsp;<strong>App</strong></h2></div><br>
+   
+<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 plcRw2">
+<div class="phone"><img id="imgFon" src="assets/img/Unipupil-review-app.png" class=" img-responsive" alt="phoneapp"/></div><br>
+</div>
+
+
+<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 plcRw2">
+  <div><p class="txtBlk"><strong><small><span class="txtRed">Install</span> the Unipupil Reviews App on Android to get access to independent feedback and ratings from past students and basic information about language schools listed on Unipupil’s global database.</small></strong></p></div>
+</div>
+
+</div>
+
+
+
+
+   
+ </div>
+</div>
+
+
+
+
+ 
+
+
+<!-- Slider / carousel start here-->
+
+<div class="container-fluid backDiv">
+<div class="row">
+
+ <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7  plcRw plc">
+<div><h2><span class="head3">Share</span>&nbsp;&nbsp;<strong>your international experience</strong></h2><br>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="container-fluid backDiv">
+ 
+    <!-- Slider -->
+    <div class="row sliHi">
+        <div class="col-xs-12 col-md-9  col-lg-9 col-sm-12  plcRw plc" id="slider">
+            <!-- Top part of the slider -->
+           <div class="row">
+               <div class="col-md-1  col-lg-1 col-sm-2"><div class="carousel-controls-mini"> <a href="#myCarousel" data-slide="prev"><img class="arwl" src= "assets/img/arrow-left-gray.png" alt="looking glass"/></a>
+                        
+                     </div>
+                    </div>  
+                <div class="col-md-3 col-lg-3 col-sm-6" id="carousel-bounding-box">
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="active item" data-slide-number="0">
+                                <img class="img-rounded img-responsive" src="assets/img/review-pic-01.png" alt="test">
+                            </div>
+                            <div class="item" data-slide-number="1">
+                                <img class="img-rounded img-responsive" src="assets/img/review-pic-02.png" alt="test">
+                            </div>
+                            <div class="item" data-slide-number="2">
+                                <img class="img-rounded img-responsive" src="assets/img/review-pic-01.png" alt="test">
+                            </div>
+                            <div class="item" data-slide-number="3">
+                                <img class="img-rounded img-responsive" src="assets/img/review-pic-02.png" alt="test">
+                            </div>
+                            <div class="item" data-slide-number="4">
+                                <img class="img-rounded img-responsive" src="assets/img/review-pic-01.png" alt="test">
+                            </div>
+                            <div class="item" data-slide-number="5">
+                                <img class="img-rounded img-responsive" src="assets/img/review-pic-02.png" alt="test">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                  
+                 </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" id="carousel-text"></div>
+                <div style="display:none;" id="slide-content">
+                    <div id="slide-content-0">
+                         
+
+                        <p class="sliCon">"Coming from Vietnam, a small Asian country, I began to dream of studying abroad when I was a little girl in secondary school. I never thought that I could one day make it to Ireland." 
+                        </p> <small class="sliCon carTxt">Hien, July 2015 </small>
+
+                    </div>
+                    <div class="sliCon" id="slide-content-1">
+                        
+
+                        <p class="sliCon">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui cum, tempora. Dicta deserunt dolores illum, ducimus vel saepe quas exercitationem perferendis debitis nulla praesentium quod placeat eligendi, iste cumque. Magnam.</p> <small class="sliCon carTxt">October 15 2013 </small>
+
+                    </div>
+                    <div id="slide-content-2">
+                         
+
+                        <p class="sliCon">"Coming from Vietnam, a small Asian country, I began to dream of studying abroad when I was a little girl in secondary school. I never thought that I could one day make it to Ireland." 
+                        </p> <small class="sliCon carTxt">Hien, July 2015 </small>
+
+                    </div>
+                    <div id="slide-content-3">
+                        
+
+                        <p class="sliCon">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis minima, ullam, placeat modi praesentium quaerat eius dicta laborum corporis quia, possimus eos adipisci asperiores omnis repudiandae voluptas itaque accusantium.</p> <small class="sliCon carTxt">October 22 2013 </small>
+
+                    </div>
+                    <div id="slide-content-4">
+                         
+
+                       <p class="sliCon">"Coming from Vietnam, a small Asian country, I began to dream of studying abroad when I was a little girl in secondary school. I never thought that I could one day make it to Ireland." 
+                        </p> <small class="sliCon carTxt">Hien, July 2015 </small>
+
+                    </div>
+                    <div id="slide-content-5">
+                         
+
+                        <p class="sliCon">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum asperiores nam eius, possimus esse sunt soluta voluptas animi ex, excepturi consectetur saepe error dicta in? Sequi incidunt eveniet, ipsam numquam.</p>
+                        <small class="sliCon carTxt">October 22 2013 </small>
+                    </div>
+                </div>
+           
+
+                <div class="col-md-1  col-lg-1  col-sm-2"><div class="carousel-controls-mini"> <a href="#myCarousel" data-slide="next"><img class="arwl" src= "assets/img/arrow-right-gray.png" alt="looking glass"/></a>
+                        
+
+                    </div>  
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+
+<!-- Slider / carousel end here-->
+
+
+
+<!-- footer with whos online and black navigation bar-->
+<footer>
+<div class="container-fluid">
+<div class="row">
+
+<nav id="ftMrgn">
+   <div class="navbar-default" id="once">
+
+    
+     <div class="btn btn-md redDiv"><span class="glyphicon glyphicon-user"></span>&nbsp;Whos online</div>
+   
+      
+      <p class="btmnav1 paraNav"><strong>There are currently</strong> 25 users <strong>and</strong> 130 guests<strong> online</strong></p>
+      <div class="uniEdge">
+        <ul class="newList">
+          <li><a href="/en/content/about-unipupil" class="aPlc">&nbsp;&nbsp;About Unipupil&nbsp;&nbsp;</a></li>
+      <li><a href="/en/content/add-your-institutions-0" class="aPlc">&nbsp;&nbsp;Add Your Institution&nbsp;&nbsp;</a></li>
+      <li><a href="/en/unipupil-services" class="aPlc">&nbsp;&nbsp;Unipupil Services&nbsp;&nbsp;</a></li>
+      <li><a href="/en/blogs" class="aPlc">&nbsp;&nbsp;Unipupil Blog&nbsp;&nbsp;</a></li>
+      <li><a href="http://unipupil.com/phpbb/index.php" class="aPlc">&nbsp;&nbsp;Forum&nbsp;&nbsp;</a></li>
+      <li><a href="/en/content/faqs-students" class="aPlc">&nbsp;&nbsp;FAQs Students&nbsp;&nbsp;</a></li>
+      <li><a href="/en/content/general-terms-conditions" class="aPlc">&nbsp;&nbsp;Terms and Conditions&nbsp;&nbsp;</a></li>
+      <li><a href="/en/content/privacy-policy" class="aPlc">&nbsp;&nbsp;Privacy&nbsp;&nbsp;</a></li>
+      <li><a href="/en/contact" class="bPlc">&nbsp;&nbsp;Contact Us&nbsp;&nbsp;</a></li>
+    </ul>
+   
+  </div>
+  </div>
+  
+</nav>
+
+  </div>
+  </div>
+
+
+
+<!-- footer with contact info,forms and social icons-->
+
+<div class="container-fluid ftCol">
+<div class="row">
+
+
+
+    <div class="col-xs-12  col-md-4 col-lg-4 col-md-push-4 col-lg-push-4 col-sm-12 hite lftBor">
+        <div class="ftBor">
+            <h5 class=" addFt"><strong>YOUR BOOKING IS SAFE - WHEN YOU BOOK WITH UNIPUPIL</strong></h5>
+        </div>
+    <div>
+        <ul class="icoLst logoPosft">
+          <li class="gryList"><span class="glyphicon glyphicon-ok uniGrn"></span>&nbsp;&nbsp;Your details are protected by a secure connection</li>
+          <li class="gryList"><span class="glyphicon glyphicon-ok uniGrn"></span>&nbsp;&nbsp;Your privacy is protected</li>
+          <li class="gryList"><span class="glyphicon glyphicon-ok uniGrn"></span>&nbsp;&nbsp;Your details will only be used to guarantee your booking</li>
+          <li class="gryList"><span class="glyphicon glyphicon-ok uniGrn"></span>&nbsp;&nbsp;No booking fees</li>
+          <li class="gryList"><span class="glyphicon glyphicon-ok uniGrn"></span>&nbsp;&nbsp;You only pay the institution</li>
+          <li class="gryList"><span class="glyphicon glyphicon-ok uniGrn"></span>&nbsp;&nbsp;Unipupil.com never charge you directly</li>
+        </ul> 
+    </div>
+        <a href="#"><img class="logoPosft" src="assets/img/payment-icons.png" alt="logo"></a>
+
+    </div>
+    <div class="col-xs-12  col-md-4 col-lg-4 col-md-push-4 col-lg-push-4 col-sm-12 hite lftBor">
+    <div class="imgPosft">
+
+
+        <h5 class="uniBlu"><strong>Signup for Unipupil Updates</strong></h5>
+  
+   <!-- newsletter form-->
+
+    <div class="row">
+       <div class="col-lg-12">
+        <div class="input-group input-group-lg frmSiz">
+          <input type="email" class="form-control input-sm" id="search-church" placeholder="Email">
+          <span class="input-group-btn">
+            <button class="btn btn-default btn-sm uniGrnbtn" type="submit">Subscribe</button><br>
+          </span>
+        </div>
+        <a href="content/add-your-institutions-0" class="btn btn-default btn-sm uniBlubtn frmSiz"><strong>Add your institution</strong></a>
+        <div class="ftBor"><img class="imgPosft" src="assets/img/ribbon-blue-002.png" alt="logo"></div><!-- /input-group -->
+      </div>
+    </div>
+
+</div>
+
+
+
+<!--social media plugins-->
+<div class="row rwTrbl">
+  <div class="icnTrbl">
+   <div class="col-xs-4  col-md-2 col-lg-2 col-md-offset-1 col-lg-offset-1">
+       <div> <div class="fb-like" data-href="http://site327.webelevate.net/Unipupil2/Students.html?#" data-width="30" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div></div>
+       </div>
+
+    <div class="col-xs-4 col-md-2 col-lg-2 col-md-offset-1 col-lg-offset-1">
+            <div><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US </script>
+                 <script type="IN/Share" data-url="http://site327.webelevate.net/Unipupil2/Students.html?#" data-counter="top"></script></div>
+    </div>
+
+               <div class="col-xs-4 col-md-2 col-lg-2 col-md-offset-1 col-lg-offset-1">
+              <div><div class="g-follow" data-annotation="vertical-bubble" data-height="20" data-href="//plus.google.com/u/0/117952176100613756318" data-rel="author"></div></div>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<!-- contact inf-->
+<div class="col-xs-12  col-md-4 col-lg-4  col-md-pull-8 col-lg-pull-8 col-sm-12 hite">
+    
+        <a href="https://unipupil.com"><img class="imgPosft" src="assets/img/new_logo1.png" alt="logo"></a>
+      <div class="addFt">
+           <h5 class="hdrFt">Unipupil Limited.</h5>
+           <p class="addFt"> Registration Number: 511203.</p>
+           <p class="addFt"><img class="imgPosft" src="assets/img/location-icon.png" alt="location icon"></p>
+            <p class="addFt">The Guinness Enterprise Centre,</p>
+            <p class="addFt">Taylor's Lane, Dublin 8, Ireland.</p>
+            <a class="hdrFt" href="#"><strong>Contact email: info@unipupil.com</strong></a>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+<!--copyright info-->
+
+<div class="container-fluid" id="copyPar">
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><p class="pcopy">&copy;&nbsp; Copyright 2012 Unipupil Limited. All Rights Reserved</p></div>
+  
+  </div>
+</div>
+
+</footer>
+
+
+<!-- End Navbar-->
+</body>
+</html>
